@@ -1,0 +1,56 @@
+footer {
+    background: #000;
+    padding-block: 2em;
+    border-top-right-radius: 3em;
+    border-top-left-radius: 3em;
+}
+
+.contact {
+    display: flex;
+    gap: 5vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.email h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+    font-size: var(--step-1);
+}
+
+.email p {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 500;
+    font-size: var(--step-3);
+}
+
+.contact .socialLinks {
+    display: flex;
+    gap: 5vw;
+    align-items: center;
+}
+
+.contact .socialLinks a {
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+}
+
+
+.contact .socialLinks a i {
+    font-size: 2rem;
+    margin-right: 0.3rem;
+    font-size: var(--step-3);
+    transition: all 0.4s ease-in;
+}
+
+.contact .socialLinks a span {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+    font-size: var(--step-3);
+    transition: all 0.4s ease-in;
+}
+
+.contact .socialLinks a:hover span, .contact .socialLinks a:hover i {
+    color: #8f8f8f;
+}

@@ -1,0 +1,51 @@
+.video {
+    margin-block: 5rem;
+    text-decoration: none;
+    background-image: url(https://images.pexels.com/photos/3808012/pexels-photo-3808012.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 50%;
+    aspect-ratio: 16/9;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.video_text {
+    display: flex;
+    align-items: flex-end;
+    justify-content: start;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 10%, rgba(0, 0, 0, 0) 100%);
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+.text_icon {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.text_icon h2 {
+    font-weight: 600;
+    font-size: var(--step-2);
+}
+
+.text_icon i {
+    font-size: var(--step-2);
+}
+
+.text_icon {
+    margin-left: 1.3rem;
+    margin-bottom: 0.9rem;
+}
+
+.video_text:hover {
+    opacity: 1;
+}

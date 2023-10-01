@@ -1,0 +1,5 @@
+.portfolio_videos {
+    display: flex;
+    margin-inline: 8.33vw;
+    gap: 2rem;
+}
