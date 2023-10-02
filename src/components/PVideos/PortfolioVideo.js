@@ -1,13 +1,13 @@
 import React from 'react'
 import classes from './PortfolioVideo.module.css'
 
-const PortfolioVideo = () => {
+const PortfolioVideo = (props) => {
   return (
-    <div class={classes.video}>
-            <div class={classes.video_text}>
-                <div class={classes.text_icon}>
-                    <i class="fa-solid fa-play"></i>
-                    <h2>Video Editing Showreel</h2>
+    <div className={classes.video} onClick={() => props.onClick()} style={{backgroundImage: `url(${props.imgSrc})`}}>
+            <div className={classes.video_text}>
+                <div className={classes.text_icon}>
+                    <i className="fa-solid fa-play"></i>
+                    <h2>{props.heading}</h2>
                 </div>
             </div>
         </div>

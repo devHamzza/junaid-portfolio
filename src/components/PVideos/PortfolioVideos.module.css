@@ -1,5 +1,24 @@
 .portfolio_videos {
+    text-decoration: none;
     display: flex;
-    margin-inline: 8.33vw;
-    gap: 2rem;
+    justify-content: center;
+    /* width: 100%; */
+    flex-wrap: wrap;
+    margin-inline: 7vw;
+    gap: 3rem;
+    margin-block: 4rem;
+}
+
+.pfSect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pfHeading {
+    text-transform: uppercase;
+    background: #000;
+    display: inline-block;
+    margin-top: 5rem;
+    font-size: var(--step-3);
 }
