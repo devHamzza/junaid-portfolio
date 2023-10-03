@@ -7,16 +7,24 @@ import PortfolioVideos from "./components/PVideos/PortfolioVideos";
 import Footer from "./components/Footer/Footer";
 import VideoPlayer from "./components/VideoPlayer/VideoPlayer";
 import About from "./components/About/About";
+import LogoScreen from "./components/LogoScreen/LogoScreen";
 
 function App() {
   const [videoId, setVideoId] = useState("");
+  const [isLoading, setIsLoading] = useState(true)
 
   const getVideoId = (id) => {
     setVideoId(id);
   };
 
+  setTimeout(() => {
+    setIsLoading(false)
+  }, 2400);
+
   return (
-    <BrowserRouter>
+    <>
+    {isLoading && <LogoScreen/>}
+    {!isLoading && <BrowserRouter>
       <header>
         <Navbar />
       </header>
@@ -51,7 +59,8 @@ function App() {
           }
         />
       </Routes>
-    </BrowserRouter>
+    </BrowserRouter>}
+    </>
   );
 }
 

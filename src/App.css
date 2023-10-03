@@ -11,6 +11,7 @@
 
 body {
     background: #343434;
+    overflow-x: hidden;
 }
 
 :root {

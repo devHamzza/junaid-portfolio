@@ -1,0 +1,29 @@
+.logoScreen {
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoScreen img {
+    width: 25%;
+    margin-bottom: 1rem;
+}
+
+.loadingBg {
+    width: 25%;
+    height: 8px;
+    border-radius: 10px;
+    background: #3f3f3f;
+}
+
+.loadingCl {
+    background: #fff;
+    height: 8px;
+    border-radius: 10px;
+    width: 0px;
+    transition: width 1.8s ease-in;
+}

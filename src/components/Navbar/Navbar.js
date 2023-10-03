@@ -10,7 +10,7 @@ const Navbar = () => {
       </div>
 
       <div className={classes.navigations}>
-      <ul>
+        <ul>
           <li>
             <Link to="/">Home </Link>
           </li>
@@ -18,7 +18,7 @@ const Navbar = () => {
             <Link to="/about">About </Link>
           </li>
           <li>
-            <Link to="portfolio">Portfolio </Link>
+            <Link to="portfolio">Portfolio</Link>
           </li>
           <li>
             <a href="#contact">Contact Us </a>

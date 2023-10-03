@@ -4,10 +4,10 @@ import classes from "./About.module.css";
 const About = () => {
   return (
     <section className={classes}>
-      <div className={classes["aboutImg"]}>
+      <div className={classes["aboutImg"]} data-aos="flip-up" data-aos-duration="600">
         <h1>About Us</h1>
       </div>
-      <div className={classes.flexBox}>
+      <div className={classes.flexBox} data-aos="zoom-out-up" data-aos-duration="1000">
         <div className={classes.aboutSideImg}>
           <img
             src="https://images.unsplash.com/photo-1490810194309-344b3661ba39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2048&q=80"

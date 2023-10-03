@@ -6,6 +6,8 @@ import Img1 from "../../assets/1.jpg";
 import Img2 from "../../assets/2.jpg";
 import Img3 from "../../assets/3.jpg";
 import Img4 from "../../assets/4.jpg";
+import Img5 from "../../assets/5.jpg";
+import Img6 from "../../assets/6.jpg";
 
 const PortfolioVideos = (props) => {
   const handleVideoClick = (id) => {
@@ -35,6 +37,16 @@ const PortfolioVideos = (props) => {
           onClick={() => handleVideoClick("video4")}
           heading="Instagram Reel, Tiktok and YT Shorts Video Editing"
           imgSrc={Img4}
+        />
+        <PortfolioVideo
+          onClick={() => handleVideoClick("video5")}
+          heading="Artificial Intellegence Cash Cow"
+          imgSrc={Img5}
+        />
+        <PortfolioVideo
+          onClick={() => handleVideoClick("video6")}
+          heading="Finance Niche Cashcow"
+          imgSrc={Img6}
         />
       </Link>
     </section>
