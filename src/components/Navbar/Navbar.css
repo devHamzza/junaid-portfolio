@@ -22,13 +22,17 @@
     list-style: none;
 }
 
-.navbar ul li a {
+.navlink {
     text-decoration: none;
-    color: #ffffffce;
     font-size: 0.9rem;
     text-transform: uppercase;
+    color: #d7d7d7ce;
 }
 
-.navbar ul li a:hover {
+.navlink:hover {
     color: #fff;
+}
+
+.navlink.active {
+    color: #ffffff;
 }
