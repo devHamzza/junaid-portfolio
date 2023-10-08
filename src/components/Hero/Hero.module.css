@@ -41,12 +41,71 @@
     font-weight: 600;
 }
 
-.hero_img img {
+.blurredPf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 68%;
     /* max-width: 392px; */
-    object-fit: cover;
     border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 1) 0px 3px 8px;
     border: 3px solid #fff;
     aspect-ratio: 1/1;
+}
+
+.hero_img .blurredPf img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+}
+
+.blurredPf {
+    background-image: url(/src/assets/new\ profile\ small.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blurredPf img {
+    opacity: 0;
+}
+
+.blurredPf::before {
+    content: "";
+    width: 68%;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    border-radius: 50%;
+    animation: pulse 2.5s infinite;
+    background-color: white;
+    margin-inline: auto;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.blurredPf.loaded::before {
+    animation: none;
+    content: none;
+}
+
+.blurredPf img {
+    opacity: 0;
+    transition: opacity 250ms ease-in-out;
+}
+
+.blurredPf.loaded img {
+    opacity: 1;
 }
