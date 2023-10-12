@@ -24,3 +24,21 @@
     margin-top: 5rem;
     font-size: var(--step-3);
 }
+
+@media (max-width: 950px) {
+    .portfolio_videos {
+       gap: 1.7rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .pfHeading {
+        font-size: 1.6rem;
+        margin-bottom: -1.3rem;
+        margin-top: 6rem;
+    }
+
+    .portfolio_videos {
+        margin-bottom: 11rem;
+    }
+}

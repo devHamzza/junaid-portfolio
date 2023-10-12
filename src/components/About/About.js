@@ -36,19 +36,19 @@ const About = () => {
             </p>
             <ul className={classes.features}>
               <li>
-                <i class="fa-solid fa-video"></i> Professional Editing
+                <i className="fa-solid fa-video"></i> Professional Editing
               </li>
               <li>
-                <i class="fa-solid fa-file-video"></i> Video Editing Showreel
+                <i className="fa-solid fa-file-video"></i> Video Editing Showreel
               </li>
               <li>
-                <i class="fa-solid fa-display"></i> Attention-Grabbing Visuals
+                <i className="fa-solid fa-display"></i> Attention-Grabbing Visuals
               </li>
               <li>
-                <i class="fa-solid fa-photo-film"></i> Engaging Transitions
+                <i className="fa-solid fa-photo-film"></i> Engaging Transitions
               </li>
               <li>
-                <i class="fa-solid fa-computer"></i>Tutorial Video editing{" "}
+                <i className="fa-solid fa-computer"></i>Tutorial Video editing{" "}
               </li>
             </ul>
           </div>

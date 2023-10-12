@@ -111,3 +111,33 @@
 .blurred-img.loaded img {
     opacity: 1;
 }
+
+@media (max-width: 950px) {
+    .video {
+        width: 46%;
+    }
+}
+
+@media (max-width: 700px) {
+    .video {
+        width: 100%;
+    }
+
+    .text_icon h2 {
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    .video_text {
+        opacity: 1;
+    }
+
+    .text_icon {
+        gap: 0.6rem;
+        align-items: center;
+    }
+
+    .text_icon i {
+        font-size: 0.9rem;
+    }
+}

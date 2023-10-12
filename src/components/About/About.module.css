@@ -64,3 +64,32 @@
     width: 100%;
     border-radius: 1rem;
 }
+
+@media (max-width: 700px) {
+
+    .aboutImg h1 {
+        font-size: 2.5rem;
+    }
+
+    .aboutSideImg {
+        display: none;
+    }
+
+    .aboutText {
+        width: 100%;
+    }
+
+    .aboutText h2 {
+        font-size: 1.3rem;
+    }
+
+    .aboutImg {
+        aspect-ratio: 4/1;
+        height: 200px;
+    }
+
+    .flexBoxes {
+        margin-top: 2.3rem;
+        margin-bottom: 3rem;
+    }
+}
