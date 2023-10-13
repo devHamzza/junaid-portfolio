@@ -35,7 +35,12 @@ const Navbar = () => {
         <div className={`navigations ${faBars ? "" : "conditionalItem"}`}>
           <ul className="">
             <li>
-              <NavLink className="navlink" onClick={iconClickHandler} to="/">
+              <NavLink
+                className="navlink"
+                onClick={iconClickHandler}
+                to="/"
+                rel="noreferrer"
+              >
                 Home
               </NavLink>
             </li>
@@ -44,6 +49,7 @@ const Navbar = () => {
                 className="navlink"
                 onClick={iconClickHandler}
                 to="/about"
+                rel="noreferrer"
               >
                 About
               </NavLink>
@@ -53,6 +59,7 @@ const Navbar = () => {
                 className="navlink"
                 onClick={iconClickHandler}
                 to="/portfolio"
+                rel="noreferrer"
               >
                 Portfolio
               </NavLink>

@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import JunaidProfile from "../../assets/new profile.png";
 import BgVideo from "../../assets/bgVideo.mp4";
 import classes from "./Hero.module.css";
-import Aos from "aos";
 
 const Hero = (props) => {
   const videoRef = useRef(null);
