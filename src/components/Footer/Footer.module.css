@@ -59,8 +59,8 @@ footer {
 @media (max-width: 700px) {
 
     footer {
-        position: fixed;
-        bottom: 0;
+        /* position: fixed; */
+        /* bottom: 0; */
         width: 100%;
         padding-block: 1.2rem 1.4em;
         border-top-right-radius: 2em;

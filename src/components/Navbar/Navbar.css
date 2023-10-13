@@ -12,9 +12,13 @@
     display: none;
 }
 
-.navbar .logo h1 {
+.navbar .logo a {
+    text-decoration: none;
+    font-weight: 1000;
+    letter-spacing: 0.5px;
     font-family: 'Jolly Lodger', cursive;
     font-size: 2rem;
+    cursor: pointer;
 }
 
 .navigations ul {

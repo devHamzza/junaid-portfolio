@@ -18,7 +18,7 @@ const Navbar = () => {
       console.log("executed");
     };
   }
-  
+
   const iconClickHandler = () => {
     setFaBars((prevState) => !prevState);
   };
@@ -29,23 +29,31 @@ const Navbar = () => {
     <Fragment>
       <nav className="navbar">
         <div className="logo">
-          <h1>junaideditz</h1>
+          <NavLink to="/">junaideditz</NavLink>
         </div>
 
         <div className={`navigations ${faBars ? "" : "conditionalItem"}`}>
           <ul className="">
             <li>
-              <NavLink className="navlink" to="/">
+              <NavLink className="navlink" onClick={iconClickHandler} to="/">
                 Home
               </NavLink>
             </li>
             <li>
-              <NavLink className="navlink" to="/about">
+              <NavLink
+                className="navlink"
+                onClick={iconClickHandler}
+                to="/about"
+              >
                 About
               </NavLink>
             </li>
             <li>
-              <NavLink className="navlink" to="/portfolio">
+              <NavLink
+                className="navlink"
+                onClick={iconClickHandler}
+                to="/portfolio"
+              >
                 Portfolio
               </NavLink>
             </li>

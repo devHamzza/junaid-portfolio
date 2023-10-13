@@ -17,50 +17,62 @@ import sImg6 from "../../assets/6s.jpg";
 
 const PortfolioVideos = (props) => {
   const handleVideoClick = (id) => {
-    props.getVideoId(id)
+    props.getVideoId(id);
   };
 
   return (
     <section id="portfolio" className={classes.pfSect}>
       <h1 className={classes.pfHeading}>My Portfolio</h1>
-      <Link className={classes.portfolio_videos} to="/videoPlayer">
-        <PortfolioVideo
-          onClick={() => handleVideoClick("video1")}
-          heading="Video Editing Showreel"
-          imgSrc={Img1}
-          smallImgSrc={sImg1}
-        />
-        <PortfolioVideo
-          onClick={() => handleVideoClick("video2")}
-          heading="Diet Niche Cash Cow Video"
-          imgSrc={Img2}
-          smallImgSrc={sImg2}
-        />
-        <PortfolioVideo
-          onClick={() => handleVideoClick("video3")}
-          heading="Frieght Broker Promo Fina"
-          imgSrc={Img3}
-          smallImgSrc={sImg3}
-        />
-        <PortfolioVideo
-          onClick={() => handleVideoClick("video4")}
-          heading="Instagram Reel, Tiktok and YT Shorts Video Editing"
-          imgSrc={Img4}
-          smallImgSrc={sImg4}
-        />
-        <PortfolioVideo
-          onClick={() => handleVideoClick("video5")}
-          heading="Artificial Intellegence Cash Cow"
-          imgSrc={Img5}
-          smallImgSrc={sImg5}
-        />
-        <PortfolioVideo
-          onClick={() => handleVideoClick("video6")}
-          heading="Finance Niche Cashcow"
-          imgSrc={Img6}
-          smallImgSrc={sImg6}
-        />
-      </Link>
+      <div className={classes.portfolio_videos}>
+        <Link to="/videoPlayer">
+          <PortfolioVideo
+            onClick={() => handleVideoClick("video1")}
+            heading="Video Editing Showreel"
+            imgSrc={Img1}
+            smallImgSrc={sImg1}
+          />
+        </Link>
+        <Link to="/videoPlayer">
+          <PortfolioVideo
+            onClick={() => handleVideoClick("video2")}
+            heading="Diet Niche Cash Cow Video"
+            imgSrc={Img2}
+            smallImgSrc={sImg2}
+          />
+        </Link>
+        <Link to="/videoPlayer">
+          <PortfolioVideo
+            onClick={() => handleVideoClick("video3")}
+            heading="Frieght Broker Promo Fina"
+            imgSrc={Img3}
+            smallImgSrc={sImg3}
+          />
+        </Link>
+        <Link to="/videoPlayer">
+          <PortfolioVideo
+            onClick={() => handleVideoClick("video4")}
+            heading="Instagram Reel, Tiktok and YT Shorts Video Editing"
+            imgSrc={Img4}
+            smallImgSrc={sImg4}
+          />
+        </Link>
+        <Link to="/videoPlayer">
+          <PortfolioVideo
+            onClick={() => handleVideoClick("video5")}
+            heading="Artificial Intellegence Cash Cow"
+            imgSrc={Img5}
+            smallImgSrc={sImg5}
+          />
+        </Link>
+        <Link to="/videoPlayer">
+          <PortfolioVideo
+            onClick={() => handleVideoClick("video6")}
+            heading="Finance Niche Cashcow"
+            imgSrc={Img6}
+            smallImgSrc={sImg6}
+          />
+        </Link>
+      </div>
     </section>
   );
 };

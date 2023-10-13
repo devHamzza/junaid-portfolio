@@ -9,6 +9,11 @@
     margin-block: 4rem;
 }
 
+.portfolio_videos a {
+    text-decoration: none;
+    width: 47%;
+}
+
 .pfSect {
     display: flex;
     flex-direction: column;
@@ -35,10 +40,14 @@
     .pfHeading {
         font-size: 1.6rem;
         margin-bottom: -1.3rem;
-        margin-top: 6rem;
+        margin-top: 3rem;
     }
 
     .portfolio_videos {
-        margin-bottom: 11rem;
+        margin-bottom: 3rem;
+    }
+
+    .portfolio_videos a {
+        width: 100%;
     }
 }
