@@ -76,6 +76,8 @@
         border: 1px solid #fff;
         border-radius: 4px;
         z-index: 10;
+        overflow-x: hidden;
+
     }
 
     .conditionalItem ul {
@@ -83,8 +85,6 @@
         position: absolute;
         flex-direction: column;
         gap: 1.5rem;
-        right: 0;
-        top: 0;
         background: #1a1a1a;
         height: 100vh;
         padding-block: 5rem 0;
@@ -93,6 +93,9 @@
         opacity: 1;
         animation: slideInFromRight 0.6s forwards;
         overflow: hidden;
+        right: 0;
+        top: 0;
+        overflow-x: hidden;
     }
 
     @keyframes slideInFromRight {

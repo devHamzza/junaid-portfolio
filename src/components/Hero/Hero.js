@@ -2,11 +2,9 @@ import React, { useEffect, useRef, useState } from "react";
 import JunaidProfile from "../../assets/new profile.png";
 import BgVideo from "../../assets/bgVideo.mp4";
 import classes from "./Hero.module.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
-AOS.init();
+import Aos from "aos";
 
-const Hero = () => {
+const Hero = (props) => {
   const videoRef = useRef(null);
   const [loaded, setLoaded] = useState(false);
 
@@ -17,11 +15,13 @@ const Hero = () => {
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.play().catch((error) => {
-        // Handle the error or show a play button for user interaction
         console.error("Video playback failed:", error);
       });
     }
   }, []);
+  
+
+
 
   return (
     <section className={classes.hero}>
@@ -31,9 +31,9 @@ const Hero = () => {
         muted
         loop
         className={classes.videoBackground}
-        data-aos="zoom-out-up"
+        data-aos={props.animation}
         data-aos-duration="800"
-      >
+        >
         <source src={BgVideo} type="video/mp4" />
       </video>
       <div
@@ -52,7 +52,11 @@ const Hero = () => {
         data-aos="zoom-out-up"
         data-aos-duration="800"
       >
-        <div className={`${classes["blurredPf"]} ${loaded ? classes["loaded"] : ''}`}>
+        <div
+          className={`${classes["blurredPf"]} ${
+            loaded ? classes["loaded"] : ""
+          }`}
+        >
           <img src={JunaidProfile} alt="Profile" onLoad={imgLoadHandler} />
         </div>
       </div>

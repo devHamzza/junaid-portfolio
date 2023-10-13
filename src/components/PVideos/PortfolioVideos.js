@@ -43,7 +43,7 @@ const PortfolioVideos = (props) => {
         <Link to="/videoPlayer">
           <PortfolioVideo
             onClick={() => handleVideoClick("video3")}
-            heading="Frieght Broker Promo Fina"
+            heading="Frieght Broker Promo Final"
             imgSrc={Img3}
             smallImgSrc={sImg3}
           />

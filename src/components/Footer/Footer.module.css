@@ -59,7 +59,7 @@ footer {
 @media (max-width: 700px) {
 
     footer {
-        /* position: fixed; */
+        /* position: absolute; */
         /* bottom: 0; */
         width: 100%;
         padding-block: 1.2rem 1.4em;
@@ -70,7 +70,7 @@ footer {
     .contact {
         flex-direction: column;
         align-items: flex-start;
-        padding-left: 2rem;
+        padding-left: 8vw;
     }
 
     .email h2 {

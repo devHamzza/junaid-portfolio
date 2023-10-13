@@ -11,6 +11,8 @@
 
 body {
     background: #343434;
+    width: 100%;
+    max-width: 100vw;
     overflow-x: hidden;
 }
 
@@ -25,6 +27,7 @@ body {
   /*32px to 7.5px*/
 }
 
+@media (min-width: 700px) {
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 5px;
@@ -50,5 +53,5 @@ body {
   background: #ffffff;
   width: 20px;
 }
-
+}
 

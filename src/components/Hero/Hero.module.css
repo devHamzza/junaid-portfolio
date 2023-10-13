@@ -1,4 +1,3 @@
-
 .videoBackground {
     position: absolute;
     right: 0;
@@ -15,7 +14,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 8.33vw;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+    ;
     height: 50vw;
 }
 
@@ -117,17 +117,22 @@
         justify-content: flex-start;
         padding: 0;
         width: 100%;
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.77) 0%, rgba(0, 0, 0, 0) 100%);;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.77) 0%, rgba(0, 0, 0, 0) 100%);
+        ;
         background-position: center center;
         background-size: cover;
-        height: 500px;
+        height: 100%;
         margin-top: -0.1rem;
         overflow: hidden;
+        padding-bottom: 2rem;
     }
 
     .videoBackground {
         top: 2.2rem;
-        height: 500px;
+        max-width: 100vw;
+        object-fit: cover;
+        height: 510px;
+        overflow: hidden;
     }
 
     .hero_text {
@@ -135,16 +140,17 @@
         text-align: center;
         margin-block: 2rem;
     }
-    
+
     .hero_img {
-        width: 98%;
+        margin-top: 0.2rem;
+        width: 385px;
     }
 
     .hero_text h1 {
         font-size: 2.8rem;
         margin-bottom: 0.5rem;
     }
-    
+
     .hero_text p {
         font-size: 1.1rem;
         font-weight: 600;

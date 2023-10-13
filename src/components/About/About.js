@@ -3,7 +3,7 @@ import classes from "./About.module.css";
 
 const About = () => {
   return (
-    <section>
+    <section className={classes.aboutPage}>
       <div
         className={classes["aboutImg"]}
         data-aos="flip-up"
